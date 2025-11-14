@@ -4,12 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Masterdots Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-    
+    <header>
+        <img src="./assets/images/logo.png" alt="Logo Masterdots">
+    </header>
+    <main>
+        <div>
+            <p id="error"></p>
+        </div>
+        <form action="juego.html" id="formEntrada">
+            <div class="itemForm">
+                <label for="nick">Introduce tu nick</label>
+                <input type="text" name="nick" value="#" id="nicka" readonly>
+                <input type="text" name="nick" id="nick" required minlength="2">
+            </div>
+            <div class="itemForm">
+                <label for="email">Correo Electrónico </label>
+                <input type="email" name="email" id="yo@iam.es">
+            </div>
+            <div class="itemForm">
+                <label for="tamano">Tamaño del juego</label>
+                <select name="tamano" id="tamano" required>
+                    <option value=0">--Por favor elige un tamaño--</option>
+                    <option value="4">4x4</option>
+                    <option value="5">5x5</option>
+                    <option value="6">6x6</option>
+                </select>
+            </div>
+            <div class="itemForm">
+                <div id="avatar">
+                    <label for="avatar">Avatar</label>
+                    <div id="avatarContainer">
+                        <img src="./assets/images/avatar1.png" alt="" id="avatarImg">
+                    </div>
+                </div>
+                <div id="avatargrid">
+                    <div class="avatarItem">
+                        <img src="./assets/images/avatar1.png" class="avatarImgItem" alt="" width="35" draggable="true">
+                    </div>
+                    <div class="avatarItem">
+                        <img src="./assets/images/avatar2.png" class="avatarImgItem" alt="" width="35" draggable="true">
+                    </div>
+                    <div class="avatarItem">
+                        <img src="./assets/images/avatar3.png" class="avatarImgItem" alt="" width="35" draggable="true">
+                    </div>
+                    <div class="avatarItem">
+                        <img src="./assets/images/avatar4.png" class="avatarImgItem" alt="" width="35" draggable="true">
+                    </div>
+                    <div class="avatarItem">
+                        <img src="./assets/images/avatar5.png" class="avatarImgItem" alt="" width="35" draggable="true">
+                    </div>
+                    <div class="avatarItem">
+                        <img src="./assets/images/avatar6.png" class="avatarImgItem" alt="" width="35" draggable="true">
+                    </div>
+                </div>
+            </div>
+            <div class="itemForm">
+                <p>* Obligatorio</p>
+            </div>
+            <div class="itemForm">
+                <input type="submit" value="JUGAR" id="jugar">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Curso FrontEnd HTML, CSS & JS</p>
+    </footer>
 
-    <script src="./JS/script.js"></script>
+
+    <script src=""></script>
+    <script src=""></script>
 </body>
 </html>
